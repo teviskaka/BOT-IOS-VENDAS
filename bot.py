@@ -33,7 +33,7 @@ db = load_db()
 
 # ================== PACOTES ==================
 PACOTES_SALAS = {
-    "50": {"label": "Sensi Android 💎", "preco": "R$ 3,00", "mensagem": "Melhor sensi android!"},
+    "50": {"label": "Sensi Ios 💎", "preco": "R$ 3,00", "mensagem": "Melhor sensi ios!"},
 }
 
 # ================== VIEW ADMIN ==================
@@ -96,7 +96,7 @@ class ProduUpView(discord.ui.View):
         )
 
         embed.set_image(
-            url="ttps://cdn.discordapp.com/attachments/1455009230015828089/1455787126041084082/content.png?ex=6955feea&is=6954ad6a&hm=68c98bc6cf03b53e99eec9d2b276a018afb43a4754bb29cf69c2a8f173d3f789&"
+            url="https://cdn.discordapp.com/attachments/1455009230015828089/1455787126041084082/content.png?ex=6955feea&is=6954ad6a&hm=68c98bc6cf03b53e99eec9d2b276a018afb43a4754bb29cf69c2a8f173d3f789&"
         )
 
         button = discord.ui.Button(label="Abrir Carrinho", style=discord.ButtonStyle.green, emoji="🛒")
@@ -185,12 +185,12 @@ async def setup(interaction: discord.Interaction, pix: str, cargo_admin: discord
 @bot.tree.command(name="produup", description="Menu de pacotes de salas")
 async def produup(interaction: discord.Interaction):
     embed = discord.Embed(
-        title="SENSI ANDROID! - GB STORE",
+        title="SENSI IOS! - GB STORE",
         description="Selecione o pacote desejado no menu abaixo para prosseguir com a compra.",
         color=discord.Color.blue()
     )
     embed.set_image(
-        url="ttps://cdn.discordapp.com/attachments/1455009230015828089/1455787126041084082/content.png?ex=6955feea&is=6954ad6a&hm=68c98bc6cf03b53e99eec9d2b276a018afb43a4754bb29cf69c2a8f173d3f789&"
+        url="https://cdn.discordapp.com/attachments/1455009230015828089/1455787126041084082/content.png?ex=6955feea&is=6954ad6a&hm=68c98bc6cf03b53e99eec9d2b276a018afb43a4754bb29cf69c2a8f173d3f789&"
     )
     await interaction.response.send_message(embed=embed, view=ProduUpView())
 
@@ -220,4 +220,5 @@ async def produup3(interaction: discord.Interaction):
     await interaction.response.send_message(embed=embed, view=ProduUpView("Mensagem UPDOW 3: Edite aqui."))
 
 bot.run(TOKEN)
+
 
