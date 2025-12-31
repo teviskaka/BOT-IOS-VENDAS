@@ -203,22 +203,23 @@ async def produup2(interaction: discord.Interaction):
         color=discord.Color.green()
     )
     embed.set_image(
-        url="https://cdn.discordapp.com/attachments/1447763890225287269/1455736408898797729/ChatGPT_Image_30_de_dez._de_2025_22_36_10.png"
+        url="https://cdn.discordapp.com/attachments/1455009230015828089/1455787126041084082/content.png?ex=6955feea&is=6954ad6a&hm=68c98bc6cf03b53e99eec9d2b276a018afb43a4754bb29cf69c2a8f173d3f789&"
     )
     await interaction.response.send_message(embed=embed, view=ProduUpView("Mensagem UPDOW 2: Edite aqui."))
 
 @bot.tree.command(name="produup3", description="Menu de pacotes de salas 3")
 async def produup3(interaction: discord.Interaction):
     embed = discord.Embed(
-        title="SALAS AUTOMATICAS 3! - GB STORE",
+        title="Sensi Ios ! - GB STORE",
         description="Mensagem UPDOW 3: Edite aqui como quiser.",
         color=discord.Color.purple()
     )
     embed.set_image(
-        url="https://cdn.discordapp.com/attachments/1447763890225287269/1455736408898797729/ChatGPT_Image_30_de_dez._de_2025_22_36_10.png"
+        url="https://cdn.discordapp.com/attachments/1455009230015828089/1455787126041084082/content.png?ex=6955feea&is=6954ad6a&hm=68c98bc6cf03b53e99eec9d2b276a018afb43a4754bb29cf69c2a8f173d3f789&"
     )
     await interaction.response.send_message(embed=embed, view=ProduUpView("Mensagem UPDOW 3: Edite aqui."))
 
 bot.run(TOKEN)
+
 
 
